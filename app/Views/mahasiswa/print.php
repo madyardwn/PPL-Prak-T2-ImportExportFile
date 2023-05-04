@@ -1,5 +1,3 @@
-// create html for pdf for organization
-
 <html>
 
 <head>
@@ -21,9 +19,17 @@
 </head>
 
 <body>
-  <img src="data:image/png;base64,<?php echo base64_encode(file_get_contents('img/logo.png')); ?>" alt="Logo" style="width: 50px; height: 75px;">
-  <h1 style="text-align: center;">Politeknik Negeri Bandung</h1>
-  <h2 style="text-align: center;">Fakultas Teknik Komputer dan Informatika</h2>
+  <div style="display: inline-block; text-align: left;">
+    <img src="data:image/png;base64,<?php echo base64_encode(file_get_contents('img/logo.png')); ?>" alt="Logo" style="width: 50px; height: 75px;"><span style="display: inline-block; width: 10px;"></span>
+  </div>
+  <div style="text-align: center;">
+    <div style="display: inline-block; text-align: center;">
+      <h1>Politeknik Negeri Bandung</h1>
+      <h3>Jl. Gegerkalong Hilir, Ciwaruga, Kec. Parongpong, Kabupaten Bandung Barat, Jawa Barat 40559</h3>
+      <h3>Telp. (022) 2013789</h3>
+    </div>
+  </div>
+
   <h3 style="text-align: center;">Data Mahasiswa</h3>
   <table border="1" cellpadding="5" cellspacing="0" style="margin: auto;">
     <thead>
